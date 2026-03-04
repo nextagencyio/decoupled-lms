@@ -1,0 +1,169 @@
+{
+  "data": {
+    "nodeInstructors": {
+      "__typename": "NodeInstructorConnection",
+      "nodes": [
+        {
+          "__typename": "NodeInstructor",
+          "id": "instructor-sarah",
+          "title": "Sarah Chen",
+          "path": "/instructors/sarah-chen",
+          "body": {
+            "processed": "<p>Sarah Chen is a senior software engineer with over 12 years of experience building web applications at companies including Google, Netflix, and Stripe. She is passionate about teaching and has helped more than 80,000 students worldwide learn modern web development through her clear, project-based teaching style.</p><p>Sarah specializes in React, TypeScript, and full-stack JavaScript development. Her courses are known for their depth, practical focus, and the care she puts into making complex concepts accessible. She actively maintains her courses to reflect the latest industry standards and framework updates.</p><p>When she is not coding or teaching, Sarah contributes to open-source projects and speaks at developer conferences. She holds a B.S. in Computer Science from Stanford University.</p>",
+            "summary": "Sarah Chen is a senior software engineer with over 12 years of experience building web applications at companies including Google, Netflix, and Stripe. She is passionate about teaching and has helped "
+          },
+          "expertise": [
+            {
+              "id": "web-development",
+              "name": "web-development"
+            }
+          ],
+          "coursesTaught": "8",
+          "totalStudents": "82,500",
+          "instructorRating": "4.9",
+          "credentials": [
+            "Senior Software Engineer (12+ years)",
+            "Former Google, Netflix, Stripe engineer",
+            "Open-source contributor with 5,000+ GitHub stars",
+            "Speaker at React Conf, JSConf, and NodeConf"
+          ],
+          "websiteUrl": "https://sarahchendev.com",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+            "alt": "Sarah Chen, Web Development Instructor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeInstructor",
+          "id": "instructor-james",
+          "title": "Dr. James Rodriguez",
+          "path": "/instructors/dr-james-rodriguez",
+          "body": {
+            "processed": "<p>Dr. James Rodriguez is a data scientist and machine learning engineer with a Ph.D. in Applied Mathematics from MIT. He spent eight years at Amazon building recommendation systems and fraud detection models before transitioning to full-time education.</p><p>James believes that data science should be accessible to everyone, not just those with advanced math degrees. His courses emphasize intuition and practical application over abstract theory, using real datasets and business problems to teach statistical and machine learning concepts.</p><p>He has been recognized as a top instructor on multiple online learning platforms, with his courses consistently rated among the highest in data science education. His textbook, 'Practical Data Science with Python,' is used in over 50 university programs.</p>",
+            "summary": "Dr. James Rodriguez is a data scientist and machine learning engineer with a Ph.D. in Applied Mathematics from MIT. He spent eight years at Amazon building recommendation systems and fraud detection m"
+          },
+          "expertise": [
+            {
+              "id": "data-science",
+              "name": "data-science"
+            },
+            {
+              "id": "ai-machine-learning",
+              "name": "ai-machine-learning"
+            }
+          ],
+          "coursesTaught": "6",
+          "totalStudents": "65,300",
+          "instructorRating": "4.8",
+          "credentials": [
+            "Ph.D. in Applied Mathematics, MIT",
+            "Former Senior Data Scientist at Amazon",
+            "Author of 'Practical Data Science with Python'",
+            "Published researcher with 25+ peer-reviewed papers"
+          ],
+          "websiteUrl": "https://jamesrodriguezdata.com",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+            "alt": "Dr. James Rodriguez, Data Science Instructor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeInstructor",
+          "id": "instructor-maya",
+          "title": "Maya Patel",
+          "path": "/instructors/maya-patel",
+          "body": {
+            "processed": "<p>Maya Patel is a UX design leader with over 10 years of experience creating user-centered digital products. She has led design teams at Spotify, Airbnb, and Figma, where she shaped products used by millions of people worldwide.</p><p>Maya's teaching philosophy centers on learning by doing. Her courses emphasize hands-on projects, real client briefs, and portfolio-ready deliverables that give students a competitive edge in the job market. She is known for providing detailed, personalized feedback on student work.</p><p>Maya holds an MFA in Interaction Design from the School of Visual Arts and a B.A. in Psychology from UC Berkeley. She is a frequent speaker at design conferences including Config, UXPA, and Interaction Design Foundation events.</p>",
+            "summary": "Maya Patel is a UX design leader with over 10 years of experience creating user-centered digital products. She has led design teams at Spotify, Airbnb, and Figma, where she shaped products used by mil"
+          },
+          "expertise": [
+            {
+              "id": "design",
+              "name": "design"
+            }
+          ],
+          "coursesTaught": "5",
+          "totalStudents": "42,800",
+          "instructorRating": "4.9",
+          "credentials": [
+            "MFA in Interaction Design, School of Visual Arts",
+            "Former Design Lead at Spotify, Airbnb, and Figma",
+            "ADPList Top 100 Design Mentors",
+            "Speaker at Config, UXPA, and IDF conferences"
+          ],
+          "websiteUrl": "https://mayapateldesign.com",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+            "alt": "Maya Patel, UX Design Instructor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

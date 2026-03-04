@@ -1,0 +1,141 @@
+{
+  "data": {
+    "nodeTestimonials": {
+      "__typename": "NodeTestimonialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-alex",
+          "title": "From Marketing Manager to Software Engineer in 6 Months",
+          "path": "/testimonials/alex-career-change",
+          "body": {
+            "processed": "<p>After spending seven years in marketing, Alex knew he wanted to make a career change into software engineering but was not sure where to start. He enrolled in Sarah Chen's Complete React Developer Course on Elevate Learning and was immediately hooked by the project-based approach.</p><p>Over six months, Alex completed four courses on the platform, building a portfolio of projects that demonstrated his growing skills. He credits Elevate Learning's structured curriculum and supportive community with keeping him motivated through the challenging transition.</p><p>Today, Alex works as a frontend developer at a fintech startup, earning 40% more than his previous marketing role. He continues to take courses on Elevate Learning to keep his skills current.</p>",
+            "summary": "After spending seven years in marketing, Alex knew he wanted to make a career change into software engineering but was not sure where to start. He enrolled in Sarah Chen's Complete React Developer Cou"
+          },
+          "studentName": "Alex Thompson",
+          "studentRole": "Frontend Developer at FinTech Solutions",
+          "courseTaken": "The Complete React Developer Course",
+          "quote": {
+            "processed": "<p>Elevate Learning gave me the structure and confidence I needed to make a career change. The projects I built during the courses became my portfolio, and that portfolio got me hired. Best investment I have ever made in myself.</p>",
+            "summary": "Elevate Learning gave me the structure and confidence I needed to make a career change. The projects I built during the courses became my portfolio, and that portfolio got me hired. Best investment I "
+          },
+          "studentRating": "5",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+            "alt": "Alex Thompson, career changer and Elevate Learning student",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-priya",
+          "title": "Promoted to Data Science Lead After Completing the Masterclass",
+          "path": "/testimonials/priya-data-science",
+          "body": {
+            "processed": "<p>Priya had been working as a business analyst for three years when she realized that data science skills would be essential for her career growth. She enrolled in Dr. Rodriguez's Python for Data Science Masterclass and was impressed by how practical and business-focused the curriculum was.</p><p>The course's emphasis on real-world datasets and business problems was exactly what Priya needed. She applied what she learned directly to projects at work, building dashboards and predictive models that caught the attention of her leadership team.</p><p>Within a year of completing the course, Priya was promoted to Data Science Lead, managing a team of three analysts. She continues to reference the course materials and community resources as her team tackles increasingly complex data challenges.</p>",
+            "summary": "Priya had been working as a business analyst for three years when she realized that data science skills would be essential for her career growth. She enrolled in Dr. Rodriguez's Python for Data Scienc"
+          },
+          "studentName": "Priya Sharma",
+          "studentRole": "Data Science Lead at RetailMax",
+          "courseTaken": "Python for Data Science Masterclass",
+          "quote": {
+            "processed": "<p>Dr. Rodriguez's course was a game-changer for my career. The real-world projects and business-focused approach meant I could apply what I learned immediately at work. My manager noticed the impact within weeks.</p>",
+            "summary": "Dr. Rodriguez's course was a game-changer for my career. The real-world projects and business-focused approach meant I could apply what I learned immediately at work. My manager noticed the impact wit"
+          },
+          "studentRating": "5",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+            "alt": "Priya Sharma, Data Science Lead and Elevate Learning graduate",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-marcus",
+          "title": "Landed My Dream UX Job Thanks to My Course Portfolio",
+          "path": "/testimonials/marcus-ux-portfolio",
+          "body": {
+            "processed": "<p>Marcus had always been interested in design but did not have a formal design education. After years of self-study that felt unfocused, he found Maya Patel's UX Design Fundamentals course on Elevate Learning and finally had the structured learning path he needed.</p><p>The course's portfolio-focused approach was critical for Marcus. By the end, he had three polished case studies that demonstrated his ability to conduct user research, create wireframes, and design interactive prototypes. He used these case studies to land interviews at five companies.</p><p>Marcus now works as a UX designer at a healthcare technology company, where he designs products that help patients manage their chronic conditions. He credits Maya's course with teaching him not just the tools, but the strategic thinking that makes a great UX designer.</p>",
+            "summary": "Marcus had always been interested in design but did not have a formal design education. After years of self-study that felt unfocused, he found Maya Patel's UX Design Fundamentals course on Elevate Le"
+          },
+          "studentName": "Marcus Williams",
+          "studentRole": "UX Designer at HealthTech Innovations",
+          "courseTaken": "UX Design Fundamentals",
+          "quote": {
+            "processed": "<p>The three case studies I built during Maya's course became my entire interview portfolio. Every interviewer commented on how thorough and well-structured they were. I would not have my dream job without this course.</p>",
+            "summary": "The three case studies I built during Maya's course became my entire interview portfolio. Every interviewer commented on how thorough and well-structured they were. I would not have my dream job witho"
+          },
+          "studentRating": "5",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "Marcus Williams, UX Designer and Elevate Learning graduate",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

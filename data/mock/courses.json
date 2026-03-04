@@ -1,0 +1,269 @@
+{
+  "data": {
+    "nodeCourses": {
+      "__typename": "NodeCourseConnection",
+      "nodes": [
+        {
+          "__typename": "NodeCourse",
+          "id": "course-react",
+          "title": "The Complete React Developer Course",
+          "path": "/courses/complete-react-developer",
+          "body": {
+            "processed": "<p>Master React from the ground up in this comprehensive course that takes you from beginner to advanced developer. You will build real-world projects using React 19, React Router, Redux Toolkit, and Next.js while learning modern best practices and patterns used by top tech companies.</p><h2>What You Will Build</h2><ul><li>A full-featured e-commerce application with shopping cart and checkout</li><li>A real-time chat application using WebSockets</li><li>A project management dashboard with drag-and-drop functionality</li><li>A server-side rendered blog with Next.js and headless CMS integration</li></ul><h2>Course Structure</h2><p>The course is divided into 12 modules, each building on the previous one. Every module includes video lessons, coding exercises, quizzes, and a hands-on project. You will also get access to a private Discord community where you can ask questions and connect with fellow learners.</p>",
+            "summary": "Master React from the ground up in this comprehensive course that takes you from beginner to advanced developer. You will build real-world projects using React 19, React Router, Redux Toolkit, and Nex"
+          },
+          "courseCategory": [
+            {
+              "id": "web-development",
+              "name": "web-development"
+            }
+          ],
+          "skillLevel": [
+            {
+              "id": "beginner",
+              "name": "beginner"
+            },
+            {
+              "id": "intermediate",
+              "name": "intermediate"
+            }
+          ],
+          "instructorName": "Sarah Chen",
+          "duration": "42 hours",
+          "lessonsCount": "186 lessons",
+          "price": "$89.99",
+          "enrollmentCount": "45,200",
+          "rating": "4.9",
+          "learningOutcomes": [
+            "Build production-ready React applications from scratch",
+            "Master React hooks, context, and state management with Redux",
+            "Implement server-side rendering with Next.js",
+            "Write comprehensive tests with React Testing Library",
+            "Deploy applications to production environments"
+          ],
+          "prerequisites": "Basic knowledge of HTML, CSS, and JavaScript",
+          "certificateIncluded": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+            "alt": "React developer course with code editor showing React components",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCourse",
+          "id": "course-python-data",
+          "title": "Python for Data Science Masterclass",
+          "path": "/courses/python-data-science-masterclass",
+          "body": {
+            "processed": "<p>Unlock the power of data with Python in this comprehensive data science course. You will learn to collect, clean, analyze, and visualize data using Python's most powerful libraries, then build predictive machine learning models to solve real business problems.</p><h2>Topics Covered</h2><ul><li>Python fundamentals and data structures for data science</li><li>Data manipulation with Pandas and NumPy</li><li>Data visualization with Matplotlib, Seaborn, and Plotly</li><li>Statistical analysis and hypothesis testing</li><li>Machine learning with scikit-learn (regression, classification, clustering)</li><li>Deep learning introduction with TensorFlow and Keras</li></ul><h2>Real-World Projects</h2><p>Throughout the course, you will work with real datasets from healthcare, finance, marketing, and e-commerce. Your capstone project involves building a complete data pipeline and predictive model for a business use case of your choice, resulting in a portfolio piece you can show employers.</p>",
+            "summary": "Unlock the power of data with Python in this comprehensive data science course. You will learn to collect, clean, analyze, and visualize data using Python's most powerful libraries, then build predict"
+          },
+          "courseCategory": [
+            {
+              "id": "data-science",
+              "name": "data-science"
+            },
+            {
+              "id": "ai-machine-learning",
+              "name": "ai-machine-learning"
+            }
+          ],
+          "skillLevel": [
+            {
+              "id": "intermediate",
+              "name": "intermediate"
+            }
+          ],
+          "instructorName": "Dr. James Rodriguez",
+          "duration": "56 hours",
+          "lessonsCount": "224 lessons",
+          "price": "$99.99",
+          "enrollmentCount": "38,700",
+          "rating": "4.8",
+          "learningOutcomes": [
+            "Analyze and visualize complex datasets with Python",
+            "Build predictive machine learning models using scikit-learn",
+            "Clean and preprocess real-world data with Pandas",
+            "Create compelling data visualizations for stakeholders",
+            "Complete an end-to-end data science project for your portfolio"
+          ],
+          "prerequisites": "Basic Python programming experience recommended",
+          "certificateIncluded": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+            "alt": "Data science visualization dashboard with Python code",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCourse",
+          "id": "course-ux-design",
+          "title": "UX Design Fundamentals: From Research to Prototype",
+          "path": "/courses/ux-design-fundamentals",
+          "body": {
+            "processed": "<p>Learn the complete UX design process from user research to high-fidelity prototyping in Figma. This course teaches the strategic thinking, research methods, and design skills you need to create digital products that users love. No prior design experience required.</p><h2>What You Will Learn</h2><ul><li>Conduct user research interviews, surveys, and usability tests</li><li>Create user personas, journey maps, and information architecture</li><li>Design wireframes and interactive prototypes in Figma</li><li>Apply visual design principles including typography, color, and layout</li><li>Build and present a complete UX case study for your portfolio</li></ul><h2>Industry-Aligned Curriculum</h2><p>The course curriculum was developed in collaboration with UX leads from Google, Spotify, and Airbnb. Each module mirrors the actual design process used at top tech companies, ensuring you graduate with skills that translate directly to the workplace.</p>",
+            "summary": "Learn the complete UX design process from user research to high-fidelity prototyping in Figma. This course teaches the strategic thinking, research methods, and design skills you need to create digita"
+          },
+          "courseCategory": [
+            {
+              "id": "design",
+              "name": "design"
+            }
+          ],
+          "skillLevel": [
+            {
+              "id": "beginner",
+              "name": "beginner"
+            }
+          ],
+          "instructorName": "Maya Patel",
+          "duration": "32 hours",
+          "lessonsCount": "142 lessons",
+          "price": "$79.99",
+          "enrollmentCount": "28,400",
+          "rating": "4.9",
+          "learningOutcomes": [
+            "Conduct effective user research and synthesize findings",
+            "Create wireframes, prototypes, and design systems in Figma",
+            "Apply UX design principles to solve real user problems",
+            "Build a professional UX portfolio with three case studies",
+            "Prepare for UX design job interviews and whiteboard challenges"
+          ],
+          "prerequisites": "None - designed for complete beginners",
+          "certificateIncluded": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80",
+            "alt": "UX designer working on wireframes and prototypes",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCourse",
+          "id": "course-aws",
+          "title": "AWS Cloud Practitioner Certification Prep",
+          "path": "/courses/aws-cloud-practitioner",
+          "body": {
+            "processed": "<p>Prepare to pass the AWS Cloud Practitioner exam with confidence. This comprehensive course covers all exam domains including cloud concepts, security, technology, and billing. You will gain hands-on experience with core AWS services through guided labs and practice exams that mirror the real certification test.</p><h2>Course Highlights</h2><ul><li>Complete coverage of all AWS Cloud Practitioner exam objectives</li><li>30+ hands-on labs using a real AWS account (included)</li><li>Six full-length practice exams with detailed explanations</li><li>Flashcards and study guides for every exam domain</li><li>Money-back guarantee if you do not pass within 60 days</li></ul><h2>AWS Services Covered</h2><p>EC2, S3, RDS, Lambda, VPC, IAM, CloudWatch, CloudFormation, DynamoDB, SNS, SQS, and many more. Each service is explained with real-world use cases and followed by a hands-on lab.</p>",
+            "summary": "Prepare to pass the AWS Cloud Practitioner exam with confidence. This comprehensive course covers all exam domains including cloud concepts, security, technology, and billing. You will gain hands-on e"
+          },
+          "courseCategory": [
+            {
+              "id": "devops-cloud",
+              "name": "devops-cloud"
+            }
+          ],
+          "skillLevel": [
+            {
+              "id": "beginner",
+              "name": "beginner"
+            }
+          ],
+          "instructorName": "Michael Torres",
+          "duration": "24 hours",
+          "lessonsCount": "128 lessons",
+          "price": "$69.99",
+          "enrollmentCount": "52,100",
+          "rating": "4.8",
+          "learningOutcomes": [
+            "Pass the AWS Cloud Practitioner certification exam",
+            "Understand core AWS services and their use cases",
+            "Navigate the AWS Management Console confidently",
+            "Explain cloud computing concepts and the shared responsibility model",
+            "Estimate costs using the AWS pricing calculator"
+          ],
+          "prerequisites": "No prior cloud experience required",
+          "certificateIncluded": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+            "alt": "Cloud computing infrastructure concept",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

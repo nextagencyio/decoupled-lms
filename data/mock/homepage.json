@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Elevate Learning",
+          "path": "/homepage",
+          "heroTitle": "Learn the Skills That Matter",
+          "heroSubtitle": "Expert-Led Online Courses for Every Stage of Your Career",
+          "heroDescription": {
+            "processed": "<p>Elevate Learning is the online education platform built by industry professionals for career-driven learners. Our hands-on courses in development, data science, design, and business are designed to help you build real skills and advance your career, on your own schedule.</p>",
+            "summary": "Elevate Learning is the online education platform built by industry professionals for career-driven learners. Our hands-on courses in development, data science, design, and business are designed to he"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-learners",
+              "title": "",
+              "number": "500,000+",
+              "label": "Active Learners"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-courses",
+              "title": "",
+              "number": "350+",
+              "label": "Expert-Led Courses"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-completion",
+              "title": "",
+              "number": "94%",
+              "label": "Course Completion Rate"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-satisfaction",
+              "title": "",
+              "number": "4.8/5",
+              "label": "Average Course Rating"
+            }
+          ],
+          "featuredItemsTitle": "Popular Courses",
+          "ctaTitle": "Start Learning Today",
+          "ctaDescription": {
+            "processed": "<p>Join hundreds of thousands of learners who have accelerated their careers with Elevate Learning. Your first course is free. No credit card required.</p>",
+            "summary": "Join hundreds of thousands of learners who have accelerated their careers with Elevate Learning. Your first course is free. No credit card required."
+          },
+          "ctaPrimary": "Browse Courses",
+          "ctaSecondary": "Start Free Trial"
+        }
+      ]
+    }
+  }
+}

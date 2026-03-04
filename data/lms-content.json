@@ -1,0 +1,375 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Online learning platform homepage with hero, statistics, and call to action",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_items_title", "label": "Featured Items Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "course",
+      "label": "Course",
+      "description": "Online courses available on the platform",
+      "body": true,
+      "fields": [
+        { "id": "course_category", "label": "Category", "type": "term(course_categories)[]" },
+        { "id": "skill_level", "label": "Skill Level", "type": "term(skill_levels)[]" },
+        { "id": "instructor_name", "label": "Instructor Name", "type": "string" },
+        { "id": "duration", "label": "Duration", "type": "string" },
+        { "id": "lessons_count", "label": "Number of Lessons", "type": "string" },
+        { "id": "price", "label": "Price", "type": "string" },
+        { "id": "enrollment_count", "label": "Enrollment Count", "type": "string" },
+        { "id": "rating", "label": "Rating", "type": "string" },
+        { "id": "learning_outcomes", "label": "Learning Outcomes", "type": "string[]" },
+        { "id": "prerequisites", "label": "Prerequisites", "type": "string" },
+        { "id": "certificate_included", "label": "Certificate Included", "type": "bool" },
+        { "id": "image", "label": "Course Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "instructor",
+      "label": "Instructor",
+      "description": "Platform instructors and course creators",
+      "body": true,
+      "fields": [
+        { "id": "expertise", "label": "Areas of Expertise", "type": "term(course_categories)[]" },
+        { "id": "courses_taught", "label": "Courses Taught", "type": "string" },
+        { "id": "total_students", "label": "Total Students", "type": "string" },
+        { "id": "instructor_rating", "label": "Instructor Rating", "type": "string" },
+        { "id": "credentials", "label": "Credentials", "type": "string[]" },
+        { "id": "website_url", "label": "Website", "type": "string" },
+        { "id": "photo", "label": "Instructor Photo", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "description": "Student testimonials and success stories",
+      "body": true,
+      "fields": [
+        { "id": "student_name", "label": "Student Name", "type": "string" },
+        { "id": "student_role", "label": "Student Role/Title", "type": "string" },
+        { "id": "course_taken", "label": "Course Taken", "type": "string" },
+        { "id": "quote", "label": "Pull Quote", "type": "text" },
+        { "id": "student_rating", "label": "Rating Given", "type": "string" },
+        { "id": "photo", "label": "Student Photo", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!", "description": "The statistic value" },
+        { "id": "label", "label": "Label", "type": "string!", "description": "What the number represents" }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vid": "course_categories",
+      "name": "Course Categories",
+      "terms": [
+        { "name": "Web Development" },
+        { "name": "Data Science" },
+        { "name": "Design" },
+        { "name": "Business" },
+        { "name": "Mobile Development" },
+        { "name": "DevOps & Cloud" },
+        { "name": "Cybersecurity" },
+        { "name": "AI & Machine Learning" }
+      ]
+    },
+    {
+      "vid": "skill_levels",
+      "name": "Skill Levels",
+      "terms": [
+        { "name": "Beginner" },
+        { "name": "Intermediate" },
+        { "name": "Advanced" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-learners",
+      "type": "paragraph.stat_item",
+      "values": { "number": "500,000+", "label": "Active Learners" }
+    },
+    {
+      "id": "stat-courses",
+      "type": "paragraph.stat_item",
+      "values": { "number": "350+", "label": "Expert-Led Courses" }
+    },
+    {
+      "id": "stat-completion",
+      "type": "paragraph.stat_item",
+      "values": { "number": "94%", "label": "Course Completion Rate" }
+    },
+    {
+      "id": "stat-satisfaction",
+      "type": "paragraph.stat_item",
+      "values": { "number": "4.8/5", "label": "Average Course Rating" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to Elevate Learning",
+        "hero_title": "Learn the Skills That Matter",
+        "hero_subtitle": "Expert-Led Online Courses for Every Stage of Your Career",
+        "hero_description": "<p>Elevate Learning is the online education platform built by industry professionals for career-driven learners. Our hands-on courses in development, data science, design, and business are designed to help you build real skills and advance your career, on your own schedule.</p>",
+        "stats_items": ["@stat-learners", "@stat-courses", "@stat-completion", "@stat-satisfaction"],
+        "featured_items_title": "Popular Courses",
+        "cta_title": "Start Learning Today",
+        "cta_description": "<p>Join hundreds of thousands of learners who have accelerated their careers with Elevate Learning. Your first course is free. No credit card required.</p>",
+        "cta_primary": "Browse Courses",
+        "cta_secondary": "Start Free Trial"
+      }
+    },
+    {
+      "id": "course-react",
+      "type": "node.course",
+      "path": "/courses/complete-react-developer",
+      "values": {
+        "title": "The Complete React Developer Course",
+        "body": "<p>Master React from the ground up in this comprehensive course that takes you from beginner to advanced developer. You will build real-world projects using React 19, React Router, Redux Toolkit, and Next.js while learning modern best practices and patterns used by top tech companies.</p><h2>What You Will Build</h2><ul><li>A full-featured e-commerce application with shopping cart and checkout</li><li>A real-time chat application using WebSockets</li><li>A project management dashboard with drag-and-drop functionality</li><li>A server-side rendered blog with Next.js and headless CMS integration</li></ul><h2>Course Structure</h2><p>The course is divided into 12 modules, each building on the previous one. Every module includes video lessons, coding exercises, quizzes, and a hands-on project. You will also get access to a private Discord community where you can ask questions and connect with fellow learners.</p>",
+        "course_category": ["web-development"],
+        "skill_level": ["beginner", "intermediate"],
+        "instructor_name": "Sarah Chen",
+        "duration": "42 hours",
+        "lessons_count": "186 lessons",
+        "price": "$89.99",
+        "enrollment_count": "45,200",
+        "rating": "4.9",
+        "learning_outcomes": ["Build production-ready React applications from scratch", "Master React hooks, context, and state management with Redux", "Implement server-side rendering with Next.js", "Write comprehensive tests with React Testing Library", "Deploy applications to production environments"],
+        "prerequisites": "Basic knowledge of HTML, CSS, and JavaScript",
+        "certificate_included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+          "alt": "React developer course with code editor showing React components"
+        }
+      }
+    },
+    {
+      "id": "course-python-data",
+      "type": "node.course",
+      "path": "/courses/python-data-science-masterclass",
+      "values": {
+        "title": "Python for Data Science Masterclass",
+        "body": "<p>Unlock the power of data with Python in this comprehensive data science course. You will learn to collect, clean, analyze, and visualize data using Python's most powerful libraries, then build predictive machine learning models to solve real business problems.</p><h2>Topics Covered</h2><ul><li>Python fundamentals and data structures for data science</li><li>Data manipulation with Pandas and NumPy</li><li>Data visualization with Matplotlib, Seaborn, and Plotly</li><li>Statistical analysis and hypothesis testing</li><li>Machine learning with scikit-learn (regression, classification, clustering)</li><li>Deep learning introduction with TensorFlow and Keras</li></ul><h2>Real-World Projects</h2><p>Throughout the course, you will work with real datasets from healthcare, finance, marketing, and e-commerce. Your capstone project involves building a complete data pipeline and predictive model for a business use case of your choice, resulting in a portfolio piece you can show employers.</p>",
+        "course_category": ["data-science", "ai-machine-learning"],
+        "skill_level": ["intermediate"],
+        "instructor_name": "Dr. James Rodriguez",
+        "duration": "56 hours",
+        "lessons_count": "224 lessons",
+        "price": "$99.99",
+        "enrollment_count": "38,700",
+        "rating": "4.8",
+        "learning_outcomes": ["Analyze and visualize complex datasets with Python", "Build predictive machine learning models using scikit-learn", "Clean and preprocess real-world data with Pandas", "Create compelling data visualizations for stakeholders", "Complete an end-to-end data science project for your portfolio"],
+        "prerequisites": "Basic Python programming experience recommended",
+        "certificate_included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+          "alt": "Data science visualization dashboard with Python code"
+        }
+      }
+    },
+    {
+      "id": "course-ux-design",
+      "type": "node.course",
+      "path": "/courses/ux-design-fundamentals",
+      "values": {
+        "title": "UX Design Fundamentals: From Research to Prototype",
+        "body": "<p>Learn the complete UX design process from user research to high-fidelity prototyping in Figma. This course teaches the strategic thinking, research methods, and design skills you need to create digital products that users love. No prior design experience required.</p><h2>What You Will Learn</h2><ul><li>Conduct user research interviews, surveys, and usability tests</li><li>Create user personas, journey maps, and information architecture</li><li>Design wireframes and interactive prototypes in Figma</li><li>Apply visual design principles including typography, color, and layout</li><li>Build and present a complete UX case study for your portfolio</li></ul><h2>Industry-Aligned Curriculum</h2><p>The course curriculum was developed in collaboration with UX leads from Google, Spotify, and Airbnb. Each module mirrors the actual design process used at top tech companies, ensuring you graduate with skills that translate directly to the workplace.</p>",
+        "course_category": ["design"],
+        "skill_level": ["beginner"],
+        "instructor_name": "Maya Patel",
+        "duration": "32 hours",
+        "lessons_count": "142 lessons",
+        "price": "$79.99",
+        "enrollment_count": "28,400",
+        "rating": "4.9",
+        "learning_outcomes": ["Conduct effective user research and synthesize findings", "Create wireframes, prototypes, and design systems in Figma", "Apply UX design principles to solve real user problems", "Build a professional UX portfolio with three case studies", "Prepare for UX design job interviews and whiteboard challenges"],
+        "prerequisites": "None - designed for complete beginners",
+        "certificate_included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80",
+          "alt": "UX designer working on wireframes and prototypes"
+        }
+      }
+    },
+    {
+      "id": "course-aws",
+      "type": "node.course",
+      "path": "/courses/aws-cloud-practitioner",
+      "values": {
+        "title": "AWS Cloud Practitioner Certification Prep",
+        "body": "<p>Prepare to pass the AWS Cloud Practitioner exam with confidence. This comprehensive course covers all exam domains including cloud concepts, security, technology, and billing. You will gain hands-on experience with core AWS services through guided labs and practice exams that mirror the real certification test.</p><h2>Course Highlights</h2><ul><li>Complete coverage of all AWS Cloud Practitioner exam objectives</li><li>30+ hands-on labs using a real AWS account (included)</li><li>Six full-length practice exams with detailed explanations</li><li>Flashcards and study guides for every exam domain</li><li>Money-back guarantee if you do not pass within 60 days</li></ul><h2>AWS Services Covered</h2><p>EC2, S3, RDS, Lambda, VPC, IAM, CloudWatch, CloudFormation, DynamoDB, SNS, SQS, and many more. Each service is explained with real-world use cases and followed by a hands-on lab.</p>",
+        "course_category": ["devops-cloud"],
+        "skill_level": ["beginner"],
+        "instructor_name": "Michael Torres",
+        "duration": "24 hours",
+        "lessons_count": "128 lessons",
+        "price": "$69.99",
+        "enrollment_count": "52,100",
+        "rating": "4.8",
+        "learning_outcomes": ["Pass the AWS Cloud Practitioner certification exam", "Understand core AWS services and their use cases", "Navigate the AWS Management Console confidently", "Explain cloud computing concepts and the shared responsibility model", "Estimate costs using the AWS pricing calculator"],
+        "prerequisites": "No prior cloud experience required",
+        "certificate_included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+          "alt": "Cloud computing infrastructure concept"
+        }
+      }
+    },
+    {
+      "id": "instructor-sarah",
+      "type": "node.instructor",
+      "path": "/instructors/sarah-chen",
+      "values": {
+        "title": "Sarah Chen",
+        "body": "<p>Sarah Chen is a senior software engineer with over 12 years of experience building web applications at companies including Google, Netflix, and Stripe. She is passionate about teaching and has helped more than 80,000 students worldwide learn modern web development through her clear, project-based teaching style.</p><p>Sarah specializes in React, TypeScript, and full-stack JavaScript development. Her courses are known for their depth, practical focus, and the care she puts into making complex concepts accessible. She actively maintains her courses to reflect the latest industry standards and framework updates.</p><p>When she is not coding or teaching, Sarah contributes to open-source projects and speaks at developer conferences. She holds a B.S. in Computer Science from Stanford University.</p>",
+        "expertise": ["web-development"],
+        "courses_taught": "8",
+        "total_students": "82,500",
+        "instructor_rating": "4.9",
+        "credentials": ["Senior Software Engineer (12+ years)", "Former Google, Netflix, Stripe engineer", "Open-source contributor with 5,000+ GitHub stars", "Speaker at React Conf, JSConf, and NodeConf"],
+        "website_url": "https://sarahchendev.com",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+          "alt": "Sarah Chen, Web Development Instructor"
+        }
+      }
+    },
+    {
+      "id": "instructor-james",
+      "type": "node.instructor",
+      "path": "/instructors/dr-james-rodriguez",
+      "values": {
+        "title": "Dr. James Rodriguez",
+        "body": "<p>Dr. James Rodriguez is a data scientist and machine learning engineer with a Ph.D. in Applied Mathematics from MIT. He spent eight years at Amazon building recommendation systems and fraud detection models before transitioning to full-time education.</p><p>James believes that data science should be accessible to everyone, not just those with advanced math degrees. His courses emphasize intuition and practical application over abstract theory, using real datasets and business problems to teach statistical and machine learning concepts.</p><p>He has been recognized as a top instructor on multiple online learning platforms, with his courses consistently rated among the highest in data science education. His textbook, 'Practical Data Science with Python,' is used in over 50 university programs.</p>",
+        "expertise": ["data-science", "ai-machine-learning"],
+        "courses_taught": "6",
+        "total_students": "65,300",
+        "instructor_rating": "4.8",
+        "credentials": ["Ph.D. in Applied Mathematics, MIT", "Former Senior Data Scientist at Amazon", "Author of 'Practical Data Science with Python'", "Published researcher with 25+ peer-reviewed papers"],
+        "website_url": "https://jamesrodriguezdata.com",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+          "alt": "Dr. James Rodriguez, Data Science Instructor"
+        }
+      }
+    },
+    {
+      "id": "instructor-maya",
+      "type": "node.instructor",
+      "path": "/instructors/maya-patel",
+      "values": {
+        "title": "Maya Patel",
+        "body": "<p>Maya Patel is a UX design leader with over 10 years of experience creating user-centered digital products. She has led design teams at Spotify, Airbnb, and Figma, where she shaped products used by millions of people worldwide.</p><p>Maya's teaching philosophy centers on learning by doing. Her courses emphasize hands-on projects, real client briefs, and portfolio-ready deliverables that give students a competitive edge in the job market. She is known for providing detailed, personalized feedback on student work.</p><p>Maya holds an MFA in Interaction Design from the School of Visual Arts and a B.A. in Psychology from UC Berkeley. She is a frequent speaker at design conferences including Config, UXPA, and Interaction Design Foundation events.</p>",
+        "expertise": ["design"],
+        "courses_taught": "5",
+        "total_students": "42,800",
+        "instructor_rating": "4.9",
+        "credentials": ["MFA in Interaction Design, School of Visual Arts", "Former Design Lead at Spotify, Airbnb, and Figma", "ADPList Top 100 Design Mentors", "Speaker at Config, UXPA, and IDF conferences"],
+        "website_url": "https://mayapateldesign.com",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+          "alt": "Maya Patel, UX Design Instructor"
+        }
+      }
+    },
+    {
+      "id": "testimonial-alex",
+      "type": "node.testimonial",
+      "path": "/testimonials/alex-career-change",
+      "values": {
+        "title": "From Marketing Manager to Software Engineer in 6 Months",
+        "body": "<p>After spending seven years in marketing, Alex knew he wanted to make a career change into software engineering but was not sure where to start. He enrolled in Sarah Chen's Complete React Developer Course on Elevate Learning and was immediately hooked by the project-based approach.</p><p>Over six months, Alex completed four courses on the platform, building a portfolio of projects that demonstrated his growing skills. He credits Elevate Learning's structured curriculum and supportive community with keeping him motivated through the challenging transition.</p><p>Today, Alex works as a frontend developer at a fintech startup, earning 40% more than his previous marketing role. He continues to take courses on Elevate Learning to keep his skills current.</p>",
+        "student_name": "Alex Thompson",
+        "student_role": "Frontend Developer at FinTech Solutions",
+        "course_taken": "The Complete React Developer Course",
+        "quote": "<p>Elevate Learning gave me the structure and confidence I needed to make a career change. The projects I built during the courses became my portfolio, and that portfolio got me hired. Best investment I have ever made in myself.</p>",
+        "student_rating": "5",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+          "alt": "Alex Thompson, career changer and Elevate Learning student"
+        }
+      }
+    },
+    {
+      "id": "testimonial-priya",
+      "type": "node.testimonial",
+      "path": "/testimonials/priya-data-science",
+      "values": {
+        "title": "Promoted to Data Science Lead After Completing the Masterclass",
+        "body": "<p>Priya had been working as a business analyst for three years when she realized that data science skills would be essential for her career growth. She enrolled in Dr. Rodriguez's Python for Data Science Masterclass and was impressed by how practical and business-focused the curriculum was.</p><p>The course's emphasis on real-world datasets and business problems was exactly what Priya needed. She applied what she learned directly to projects at work, building dashboards and predictive models that caught the attention of her leadership team.</p><p>Within a year of completing the course, Priya was promoted to Data Science Lead, managing a team of three analysts. She continues to reference the course materials and community resources as her team tackles increasingly complex data challenges.</p>",
+        "student_name": "Priya Sharma",
+        "student_role": "Data Science Lead at RetailMax",
+        "course_taken": "Python for Data Science Masterclass",
+        "quote": "<p>Dr. Rodriguez's course was a game-changer for my career. The real-world projects and business-focused approach meant I could apply what I learned immediately at work. My manager noticed the impact within weeks.</p>",
+        "student_rating": "5",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+          "alt": "Priya Sharma, Data Science Lead and Elevate Learning graduate"
+        }
+      }
+    },
+    {
+      "id": "testimonial-marcus",
+      "type": "node.testimonial",
+      "path": "/testimonials/marcus-ux-portfolio",
+      "values": {
+        "title": "Landed My Dream UX Job Thanks to My Course Portfolio",
+        "body": "<p>Marcus had always been interested in design but did not have a formal design education. After years of self-study that felt unfocused, he found Maya Patel's UX Design Fundamentals course on Elevate Learning and finally had the structured learning path he needed.</p><p>The course's portfolio-focused approach was critical for Marcus. By the end, he had three polished case studies that demonstrated his ability to conduct user research, create wireframes, and design interactive prototypes. He used these case studies to land interviews at five companies.</p><p>Marcus now works as a UX designer at a healthcare technology company, where he designs products that help patients manage their chronic conditions. He credits Maya's course with teaching him not just the tools, but the strategic thinking that makes a great UX designer.</p>",
+        "student_name": "Marcus Williams",
+        "student_role": "UX Designer at HealthTech Innovations",
+        "course_taken": "UX Design Fundamentals",
+        "quote": "<p>The three case studies I built during Maya's course became my entire interview portfolio. Every interviewer commented on how thorough and well-structured they were. I would not have my dream job without this course.</p>",
+        "student_rating": "5",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+          "alt": "Marcus Williams, UX Designer and Elevate Learning graduate"
+        }
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Elevate Learning",
+        "body": "<p>Elevate Learning was founded in 2019 by a team of software engineers, data scientists, and educators who were frustrated by the gap between what online courses teach and what employers actually need. We set out to build a learning platform where every course is taught by a working professional and every lesson is grounded in real-world application.</p><h2>Our Mission</h2><p>To make career-relevant, expert-led education accessible to anyone, anywhere, at any stage of their career.</p><h2>What Makes Us Different</h2><ul><li><strong>Industry-Expert Instructors</strong> - Every instructor on our platform is an active professional with at least 8 years of industry experience. No theory-only academics.</li><li><strong>Project-Based Learning</strong> - Every course includes hands-on projects that mirror real work. You graduate with portfolio pieces, not just certificates.</li><li><strong>Constantly Updated</strong> - Our instructors update their courses regularly to reflect the latest tools, frameworks, and industry practices.</li><li><strong>Completion-Focused Design</strong> - Our 94% completion rate is the highest in the industry, thanks to bite-sized lessons, progress tracking, and community support.</li></ul><h2>Our Impact</h2><p>Since our launch, over 500,000 learners from 120 countries have enrolled in Elevate Learning courses. Our alumni work at companies including Google, Amazon, Meta, Spotify, Stripe, and thousands of startups and enterprises worldwide.</p>"
+      }
+    },
+    {
+      "id": "page-pricing",
+      "type": "node.page",
+      "path": "/pricing",
+      "values": {
+        "title": "Pricing & Plans",
+        "body": "<h2>Choose the Plan That Fits Your Goals</h2><p>Whether you want to take a single course or access our entire library, we have a plan for you. All plans include lifetime access to purchased courses and a 30-day money-back guarantee.</p><h2>Individual Courses</h2><ul><li>Purchase courses individually starting at $49.99</li><li>Lifetime access to course materials and updates</li><li>Certificate of completion included</li><li>Access to course-specific community forum</li></ul><h2>Elevate Pro (Monthly)</h2><ul><li>$29/month for unlimited access to all 350+ courses</li><li>New courses added every week</li><li>Priority access to live Q&A sessions with instructors</li><li>Downloadable resources, projects, and code files</li><li>Cancel anytime</li></ul><h2>Elevate Pro (Annual)</h2><ul><li>$199/year (save 43% vs monthly)</li><li>Everything in monthly Pro plus annual career skills assessment</li><li>Two free one-on-one mentoring sessions per year</li><li>Early access to new courses</li></ul><h2>Teams & Enterprise</h2><p>Training your team? Elevate Learning for Teams includes analytics dashboards, custom learning paths, admin tools, and volume pricing. Contact sales@elevatelearning.com for a custom quote.</p>"
+      }
+    }
+  ]
+}
