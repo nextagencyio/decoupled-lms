@@ -44,7 +44,7 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
         )}
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
-            href="/services"
+            href="/courses"
             className="px-8 py-4 bg-accent-400 text-primary-950 rounded-lg hover:bg-accent-300 transition-all duration-200 font-display font-bold text-lg uppercase tracking-wider shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             Explore Services
