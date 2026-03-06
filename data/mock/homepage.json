@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-learners",
               "title": "",
-              "number": "500,000+",
+              "number": "500,000+", "value": "500,000+",
               "label": "Active Learners"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-courses",
               "title": "",
-              "number": "350+",
+              "number": "350+", "value": "350+",
               "label": "Expert-Led Courses"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-completion",
               "title": "",
-              "number": "94%",
+              "number": "94%", "value": "94%",
               "label": "Course Completion Rate"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-satisfaction",
               "title": "",
-              "number": "4.8/5",
+              "number": "4.8/5", "value": "4.8/5",
               "label": "Average Course Rating"
             }
           ],
