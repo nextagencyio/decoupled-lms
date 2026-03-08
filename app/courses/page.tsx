@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import CourseCard from '../components/CourseCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Courses | Lms',
