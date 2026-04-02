@@ -24,7 +24,7 @@ interface CourseByPathData {
 async function getCourse(path: string): Promise<DrupalCourse | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_COURSE_BY_PATH, { path })
+    const data = await client.raw(GET_COURSE_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching course:', error)
