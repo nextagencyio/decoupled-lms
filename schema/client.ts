@@ -34,7 +34,42 @@ export function createTypedClient(client: DecoupledClient): TypedClient {
         query ($path: String!) {
           route(path: $path) {
             ... on RouteInternal {
-              entity { ... on NodePage { __typename id title path body { processed } } }
+              entity {
+                ... on NodePage { __typename id title path body { processed } }
+                ... on NodeCourse {
+                  __typename id title path
+                  body { processed }
+                  courseCategory { ... on TermInterface { id name } }
+                  skillLevel { ... on TermInterface { id name } }
+                  instructorName duration lessonsCount price enrollmentCount rating
+                  learningOutcomes prerequisites certificateIncluded
+                  image { url alt width height }
+                }
+                ... on NodeInstructor {
+                  __typename id title path
+                  body { processed }
+                  expertise { ... on TermInterface { id name } }
+                  coursesTaught totalStudents instructorRating credentials websiteUrl
+                  photo { url alt width height }
+                }
+                ... on NodeTestimonial {
+                  __typename id title path
+                  body { processed }
+                  studentName studentRole courseTaken
+                  quote { processed }
+                  studentRating
+                  photo { url alt width height }
+                }
+                ... on NodeHomepage {
+                  __typename id title
+                  heroTitle heroSubtitle
+                  heroDescription { processed }
+                  statsItems { ... on ParagraphStatItem { id number label } }
+                  featuredItemsTitle ctaTitle
+                  ctaDescription { processed }
+                  ctaPrimary ctaSecondary
+                }
+              }
             }
           }
         }
